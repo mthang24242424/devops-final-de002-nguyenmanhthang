@@ -48,9 +48,9 @@ services:
       DB_HOST: mysql
       DB_PORT: "3306"
       # TODO 3: lấy tên database, tài khoản, mật khẩu MySQL từ student.env (không ghi cứng)
-      DB_NAME: ${{MYSQL_DATABASE}}
-      DB_USER: ${{MYSQL_USER}}
-      DB_PASSWORD: ${{MYSQL_PASSWORD}}
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USER: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
       TZ: Asia/Ho_Chi_Minh
     # Chỉ khởi động app khi service mysql đã ở trạng thái healthy (CÓ SẴN)
     depends_on:
